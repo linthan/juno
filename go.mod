@@ -1,6 +1,6 @@
 module github.com/douyu/juno
 
-go 1.20
+go 1.21
 
 require (
 	github.com/BurntSushi/toml v1.3.2
@@ -8,12 +8,12 @@ require (
 	github.com/alibaba/sentinel-golang v1.0.4
 	github.com/aliyun/alibaba-cloud-sdk-go v1.62.186
 	github.com/aliyun/aliyun-log-go-sdk v0.1.43
-	github.com/apache/rocketmq-client-go/v2 v2.1.2-0.20230628073434-533de03048e1
+	github.com/apache/rocketmq-client-go/v2 v2.1.2
 	github.com/beeker1121/goque v2.1.0+incompatible
 	github.com/bojand/ghz v0.117.0
 	github.com/casbin/casbin/v2 v2.64.0
 	github.com/cockroachdb/cmux v0.0.0-20170110192607-30d10be49292
-	github.com/douyu/jupiter v0.11.14
+	github.com/douyu/jupiter v0.11.21
 	github.com/go-git/go-git/v5 v5.6.1
 	github.com/go-gomail/gomail v0.0.0-20160411212932-81ebce5c23df
 	github.com/go-playground/validator v9.31.0+incompatible
@@ -70,7 +70,6 @@ require (
 	k8s.io/api v0.26.3
 	k8s.io/apimachinery v0.27.1
 	k8s.io/client-go v0.26.3
-
 )
 
 require (
@@ -205,7 +204,7 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230822172742-b8732ec3820d // indirect
 	google.golang.org/grpc/examples v0.0.0-20220831213702-ddcda5f76a3b // indirect
-	google.golang.org/protobuf v1.31.0 // indirect
+	google.golang.org/protobuf v1.34.1 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect

@@ -85,4 +85,4 @@ if [ "${DEBUG}" == "1" ]; then
     OPTIMIZATION_FLAGS=""
 fi
 
-goxc -d=${OUT} -pv=${APP_VERSION} -bc='linux,windows,darwin' -build-ldflags="${LD_EXTRAFLAGS}"
+goxc -d=${OUT} -pv=${APP_VERSION} -bc='linux,windows,darwin' -build-ldflags="${LD_EXTRAFLAGS}" -build-flags="-tags embedassets"

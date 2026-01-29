@@ -32,7 +32,7 @@ do
     read pkgPath  <<< $(echo ${task} | awk -F ":" '{ print $1 }')
     read binName  <<< $(echo ${task} | awk -F ":" '{  print $2 }')
     echo pkgPath:${pkgPath}, binName:${binName}
-    go build -ldflags "$1" -o ./bin/$(echo $(echo ${binName} -v | awk -F/ '{print $NF}') ${pkgPath})
+    go build -tags embedassets -ldflags "$1" -o ./bin/$(echo $(echo ${binName} -v | awk -F/ '{print $NF}') ${pkgPath})
     echo -e "\n"
 done
 
@@ -41,7 +41,7 @@ if [ -d "${basePath}/cmd/task" ];then
         echo building ${file}...
         echo pkgPath:${file}, binName:$(basename  $file)
         cd ${file}
-        go build -ldflags "$1" -o ${basePath}/bin/job/$(echo $(basename  $file))
+        go build -tags embedassets -ldflags "$1" -o ${basePath}/bin/job/$(echo $(basename  $file))
         echo -e "\n"
     done
 fi
